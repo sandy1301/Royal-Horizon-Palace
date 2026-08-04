@@ -16,7 +16,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 70px;
-    background-color: black;
+    background-color:#140701;
     position:fixed;
     top:0;
     width:100%;
@@ -102,6 +102,42 @@ nav ul li a:hover{
     font-weight:400;
     line-height:30px;
 }
+#About{
+    background-color:#5e2206;
+    text-align:center;
+    height:100vh;
+    width:auto;
+}
+#About h1{
+    font-size:50px;
+    color:gold;                 
+    font-weight:400;
+    padding:30px;
+}
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+#About p{
+    font-size:20px;
+    color:white;                 
+    font-weight:400;
+    line-height:40px;
+}
+.about-pic{
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    border: 2px solid #FFD700;
+}
+.about-pic:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    opacity: 80%;
+}
 #Rooms{
     background-color:#3d1807;      
     text-align:center;
@@ -147,11 +183,17 @@ nav ul li a:hover{
     text-align:center;
     height:180vh;
     width:auto;
-    padding:20px;
+    padding:15px;
     color:gold;
     font-size:25px;
     font-weight:400;
     padding-bottom:50px;
+}
+#Gallery h1{
+    font-size:50px;
+    color:gold;                 
+    font-weight:400;
+    padding:15px;
 }
 .gallery-image{
     width: 300px;
@@ -164,4 +206,140 @@ nav ul li a:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;
     opacity: 80%;
+}
+#Contact{
+    background-color:#752d0c;
+    text-align:center;
+    height:200vh;
+    width:auto;
+}
+#Contact h1{
+    font-size:50px;
+    color:gold;                 
+    font-weight:400;
+    padding:30px;
+}
+#Contact .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+#Contact p{
+    font-size:25px;
+    color:white;                 
+    font-weight:400;
+    line-height:40px;
+    font-weight:300;
+}
+#Contact .contact-info{
+    font-size:20px;
+    color:white;
+    text-align:left;
+    line-height:2;
+}
+span{
+    color:gold;
+    font-weight:400;
+    font-size:20px;
+}
+strong{
+    color:gold;
+}
+/* #footer{
+    background-color:#140701;
+    text-align:center;
+    height:10vh;
+    width:auto;
+    padding-top:20px;
+}
+#footer p{
+    font-size:18px;
+    color:white;                 
+    font-weight:400;
+    line-height:40px;
+} */
+#Booking{
+    background-color:#5e2206;
+    text-align:center;
+    min-height:100vh;
+    padding:50px;
+}
+
+#Booking h1{
+    font-size:50px;
+    color:gold;
+    margin-bottom:30px;
+}
+
+.booking-form{
+    width:600px;
+    margin:auto;
+    background-color:#3d1807;
+    padding:30px;
+    border-radius:15px;
+    border:2px solid #FFD700;
+    text-align:left;
+}
+
+.booking-form label{
+    display:block;
+    margin-bottom:8px;
+    color:gold;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:20px;
+    border-radius:8px;
+    border:1px solid #FFD700;
+    background-color:#fff;
+    color:#140701;
+    font-size:16px;
+}
+
+.booking-form input[type="radio"],
+.booking-form input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+}
+
+.booking-form input[type="radio"] + label,
+.booking-form input[type="checkbox"] + label{
+    display:inline;
+    color:white;
+    font-size:16px;
+    font-weight:normal;
+}
+
+.booking-form textarea{
+    rowspan: 3px;
+    columnspan: 3px;
+}
+
+.booking-form button{
+    background-color:#FFD700;
+    color:#140701;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-right:15px;
+    transition:0.3s;
+    text-align:center;
+}
+
+.booking-form button:hover{
+    background-color:#140701;
+    color:#FFD700;
+    border:1px solid #FFD700;
 }

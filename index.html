@@ -21,25 +21,37 @@
     <div class="hero" id="index.html">
         <h1>Royal Horizon Palace</h1>
         <p>Where Royal Heritage Meets Modern Luxury</p>
-        <a href="" class="btn">Book Now</a>
+        <a href="#Booking" class="btn">Book Now</a>
     </div>
     </header>
     <section id="About">
-         
-    </section>
+        <h1>About Us</h1>
+        <div class="history">
+        <img src="about pic.avif" alt="about pic" class="about-pic">
+        <p>Welcome to <strong>Royal Horizon Palace</strong>, a destination where timeless elegance
+           meets modern luxury. Nestled in a serene location, our hotel is designed to offer
+           guests an unforgettable experience with exceptional comfort, personalized service,
+           and world-class hospitality.Whether you are traveling for business, celebrating a special 
+           occasion, or enjoying a relaxing vacation, our luxurious rooms, fine dining restaurants, 
+           wellness spa, swimming pool, and premium facilities ensure every moment of your stay is memorable.
+           Experience elegance, comfort, and unforgettable hospitality at <strong>Royal Horizon Palace</strong>
+           —where every stay becomes a cherished memory.
+        </p>   
+        </div>
+    </section>    
     <section id="Rooms">
         <h1>Rooms</h1>
         <div class="room-container">
         <p>Our rooms are designed to provide the utmost comfort and luxury. Each room is equipped with 
-            modern amenities, plush bedding, and elegant decor to ensure a relaxing stay. Choose from a 
-            variety of room types, including deluxe suites, executive rooms, and family accommodations, 
-            all tailored to meet your needs.Indulge in the royal experience with our exclusive room services, <br>
-            Including 24-hour room service, personalized concierge assistance, and access to our spa and wellness
-            facilities. Whether you're here for business or leisure, our rooms offer a serene retreat where you can unwind and rejuvenate.
-            Book your stay at Royal Horizon Palace and immerse yourself in a world of elegance, comfort, and exceptional hospitality.</p>
+           modern amenities, plush bedding, and elegant decor to ensure a relaxing stay. Choose from a 
+           variety of room types, including deluxe suites, executive rooms, and family accommodations, 
+           all tailored to meet your needs.Indulge in the royal experience with our exclusive room services, <br>
+           Including 24-hour room service, personalized concierge assistance, and access to our spa and wellness
+           facilities. Whether you're here for business or leisure, our rooms offer a serene retreat where you can unwind and rejuvenate.
+           Book your stay at Royal Horizon Palace and immerse yourself in a world of elegance, comfort, and exceptional hospitality.
+        </p>
         <img src="room pic.avif" alt="Room pic" class="room-pic">   
         </div>
-
     </section>
     <section id="Gallery">
         <h1>Gallery</h1><br>
@@ -61,5 +73,77 @@
             <img src="pic 15.avif" alt="Gallery Image 15" class="gallery-image">
             <img src="pic 16.avif" alt="Gallery Image 16" class="gallery-image">
         </div>
+    </section>    
+    <section id= "Contact">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <p>For inquiries, reservations, or any assistance, please reach out to us through the following contact details:</p>
+            <p class="contact-info">
+                <span>📍  Address</span>:Royal Horizon Palace,25 Grand Palace Road,<br>MG Road, Bengaluru,
+                Karnataka – 560001, India<br>
+                <span>📞 Phone</span>:  +1 (123) 456-7890<br>
+                <span>✉️ Email</span>: info@royalhorizonpalace.com<br>
+                <span>🕒 Working Hours:</span> Open 24 Hours<br> 
+                <span>🛎️Check-in</span>: 2:00 PM<br> 
+                <span>🚪️Check-out</span>: 11:00 AM
+            </p>
+        </div>
+            <section id="Booking">
+            <h1>Book Your Stay</h1>
+            <form class="booking-form">
+                <label for="fullname">Full Name</label>         
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br>
+                <label for="email">Email Address</label>         
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <label for="phone">Phone Number</label>         
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+                <label for="checkin">Check-In Date</label>         
+                <input type="date" id="checkin" name="checkin" required><br>
+                <label for="checkout">Check-Out Date</label>
+                <input type="date" id="checkout" name="checkout" required><br>
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="">Select Guests</option>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5+ Guests</option>
+                </select><br>
+                <label for="room">Room Type</label>
+                <select id="room" name="room" required>
+                    <option value="">Select Room Type</option>
+                    <option>Deluxe Room</option>
+                    <option>Executive Room</option>
+                    <option>Family Suite</option>
+                    <option>Presidential Suite</option>
+                </select><br>
+                <label for="bed">Bed Preference</label>
+                <select id="bed" name="bed">
+                    <option value="">Select Bed Type</option>
+                    <option>Single Bed</option>
+                    <option>Double Bed</option>
+                    <option>King Size Bed</option>
+                    <option>Twin Beds</option>
+                </select><br>
+                <label>Payment Method</label><br>
+                <input type="radio" id="card" name="payment" value="Card" required>
+                <label for="card">Credit/Debit Card</label>
+                <input type="radio" id="upi" name="payment" value="UPI">
+                <label for="upi">UPI</label>
+                <input type="radio" id="cash" name="payment" value="Pay at Hotel">
+                <label for="cash">Pay at Hotel</label><br><br>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the Terms & Conditions</label><br><br>
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="5" placeholder="Any special requests..."></textarea><br><br>
+                <button type="submit">Book Now</button>
+                <button type="reset">Reset</button>
+            </form>
+            </section>
+    </section>
+    <!-- <section id="footer">
+        <p>&copy; 2026 Royal Horizon Palace. All rights reserved.</p>
+    </section>     -->
 </body>
 </html>
