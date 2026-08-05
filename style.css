@@ -74,35 +74,6 @@ nav ul li a:hover{
     background:#3d1807;
     color:gold;
 }
-#Home{
-    background-color:#5e2206;      
-    text-align:center;
-    height:70vh;
-    width:auto;
-    padding:10px;
-    display: flex;
-    flex-direction: column;
-}
-#Home h1{
-    padding:px;
-    font-size:50px;
-    color:gold;                 
-    font-weight:400;
-}
-#sub1{
-    font-size:30px;
-    color:#5C4033;                
-    font-weight:300;
-    padding-top:25px;
-    margin:10px;
-}
-#Home p{
-    font-size:20px;
-    color:white;                 
-    margin-top:20px;
-    font-weight:400;
-    line-height:30px;
-}
 #About{
     background-color:#5e2206;
     text-align:center;
@@ -182,13 +153,13 @@ nav ul li a:hover{
 #Gallery{
     background-color:#5e2206;      
     text-align:center;
-    height:180vh;
+    height:210vh;
     width:auto;
     padding:15px;
     color:gold;
     font-size:25px;
     font-weight:400;
-    padding-bottom:50px;
+   
 }
 #Gallery h1{
     font-size:50px;
@@ -196,12 +167,20 @@ nav ul li a:hover{
     font-weight:400;
     padding:15px;
 }
+.gallery-container{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap:20px;
+    padding:15px;
+    display:grid;
+}
 .gallery-image{
-    width: 300px;
-    height: 225px;
+     width: 350px;
+    height: 200px;
     border-radius: 10px;
     border: 2px solid #FFD700;
-    margin: 10px;
+    margin: 8px; 
+    object-fit:cover;
 }
 .gallery-image:hover{
     transform: scale(1.05);
@@ -373,7 +352,8 @@ strong{
         font-size:30px;
         line-height:1.2;
         overflow-wrap:break-word;
-        margin-top:10px;    
+        margin-top:10px;  
+        
     }
     .hero p{
         width:100%;
@@ -388,6 +368,90 @@ strong{
         background:#3d1807;
         color:gold;
     }
-
-
+   
+    .About{
+        width:100%;
+        min-height:100vh;
+        overflow:hidden;
+    }
+    .history{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+    #About h1{
+        font-size: 30px;
+        padding:10px;
+    }
+    #About p{
+        font-size:12px;
+        margin-top: 5px;
+        line-height: 20px;
+    }
+    .about-pic{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid #FFD700;
+    }
+    .about-pic:hover{
+        opacity: 90%;
+    }
+    .Rooms{
+        width:100%;
+        min-height:100vh;
+        overflow:hidden;
+    }
+    .room-container{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+    #Rooms h1{
+        font-size: 30px;
+        padding:5px;
+    }
+    #Rooms p{
+        font-size:12px;
+        line-height: 20px;
+    }
+    .room-pic{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid #FFD700;
+    }
+    .room-pic:hover{
+        opacity: 90%;
+    }
+    span{
+        font-size: 12px;
+    }
+    #Gallery h1{
+        font-size:30px;
+        padding:5px;
+    }
+    .gallery-container{
+       grid-template-columns:repeat(2, 1fr);
+    }
+    .gallery-image{
+        width: 120px;
+        height: 110px;
+        border-radius: 10px;
+        margin: 3px; 
+    }
+    #Contact h1{
+        font-size:30px;
+        padding:10px;
+    }
+    #Contact p{
+       font-size:18px;
+       line-height:20px;
+       font-weight:200;
+    }
+    #Contact .contact-info{
+       font-size:15px;
+       line-height:2;
+       text-align:center;
+    }
 }
