@@ -115,7 +115,7 @@ nav ul li a:hover{
     text-align:center;
     height:100vh;
     width:auto;
-    padding:20;
+    padding:20px;
     font-size:25px;
     font-weight:400;
 }
@@ -190,7 +190,6 @@ nav ul li a:hover{
 #Contact{
     background-color:#752d0c;
     text-align:center;
-    height:200vh;
     width:auto;
 }
 #Contact h1{
@@ -228,26 +227,13 @@ span{
 strong{
     color:gold;
 }
-/* #footer{
-    background-color:#140701;
-    text-align:center;
-    height:10vh;
-    width:auto;
-    padding-top:20px;
-}
-#footer p{
-    font-size:18px;
-    color:white;                 
-    font-weight:400;
-    line-height:40px;
-} */
-#Booking{
+#booking{
     background-color:#5e2206;
     text-align:center;
     min-height:100vh;
     padding:50px;
 }
-#Booking h1{
+#booking h1{
     font-size:50px;
     color:gold;
     margin-bottom:30px;
@@ -293,10 +279,7 @@ strong{
     font-size:16px;
     font-weight:normal;
 }
-.booking-form textarea{
-    rowspan: 3px;
-    columnspan: 3px;
-}
+
 .booking-form button{
     background-color:gold;
     color:#140701;
@@ -309,11 +292,25 @@ strong{
     margin-right:15px;
     transition:0.3s;
     text-align:center;
+    align-items: center;
 }
 .booking-form button:hover{
     background-color:#140701;
     color:#FFD700;
     border:1px solid #FFD700;
+}
+#footer{
+    background-color:#140701;
+    text-align:center;
+    height:10vh;
+    width:auto;
+    padding-top:20px;
+}
+#footer p{
+    font-size:18px;
+    color:white;                 
+    font-weight:400;
+    line-height:40px;
 }
 @media(max-width:768px){
     html,body{
@@ -353,7 +350,6 @@ strong{
         line-height:1.2;
         overflow-wrap:break-word;
         margin-top:10px;  
-        
     }
     .hero p{
         width:100%;
@@ -369,7 +365,7 @@ strong{
         color:gold;
     }
    
-    .About{
+    #About{
         width:100%;
         min-height:100vh;
         overflow:hidden;
@@ -397,7 +393,7 @@ strong{
     .about-pic:hover{
         opacity: 90%;
     }
-    .Rooms{
+    #Rooms{
         width:100%;
         min-height:100vh;
         overflow:hidden;
@@ -417,7 +413,7 @@ strong{
     }
     .room-pic{
         width: 250px;
-        height: 150px;
+        height: 120px;
         border-radius: 10px;
         border: 2px solid #FFD700;
     }
@@ -427,16 +423,19 @@ strong{
     span{
         font-size: 12px;
     }
+    #Gallery{
+        height:auto;
+    }
     #Gallery h1{
         font-size:30px;
         padding:5px;
     }
     .gallery-container{
-       grid-template-columns:repeat(2, 1fr);
+       grid-template-columns:1fr;
     }
     .gallery-image{
-        width: 120px;
-        height: 110px;
+        width: 250px;
+        height: 200px;
         border-radius: 10px;
         margin: 3px; 
     }
@@ -453,5 +452,59 @@ strong{
        font-size:15px;
        line-height:2;
        text-align:center;
+    }
+    #Booking{
+        min-height: auto;
+        padding:30px 15px;
+    }
+    #Booking h1{
+        font-size:30px;
+        margin-bottom:20px;
+    }
+    .booking-form{
+        width:100%;
+        max-width:100%;
+        padding:20px;
+        border-radius:10px;
+    }
+    .booking-form label{
+        font-size:15px;
+    }
+    
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea{
+        width:100%;
+        padding:10px;
+        font-size:15px;
+        margin-bottom:15px;
+    }
+    .booking-form textarea{
+        min-height:100px;
+        resize:vertical;
+    }
+    .booking-form input[type="radio"],
+    .booking-form input[type="checkbox"]{
+        width:auto;
+        margin-right:5px;
+    }
+    .booking-form input[type="radio"] + label,
+    .booking-form input[type="checkbox"] + label{
+        display:inline;
+        font-size:14px;
+    }
+    .booking-form button{
+        width:100%;
+        margin:10px 0;
+        padding:12px;
+        font-size:16px;
+    }
+    #footer{
+        height:auto;
+        padding:15px;
+    }
+    #footer p{
+        font-size:14px;
+        line-height:22px;
     }
 }
