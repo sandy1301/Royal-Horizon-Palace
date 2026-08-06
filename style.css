@@ -76,7 +76,7 @@ nav ul li a:hover{
 #About{
     background-color:#5e2206;
     text-align:center;
-    height:100vh;
+    min-height:100vh;
     width:auto;
 }
 #About h1{
@@ -112,7 +112,7 @@ nav ul li a:hover{
 #Rooms{
     background-color:#3d1807;      
     text-align:center;
-    height:100vh;
+    min-height:100vh;
     width:auto;
     padding:20px;
     font-size:25px;
@@ -216,7 +216,7 @@ nav ul li a:hover{
     color:white;
     text-align:left;
     line-height:2;
-    border:2x solid gold;
+    border:2px solid gold;
     border-radius: 10px;
 }
 span{

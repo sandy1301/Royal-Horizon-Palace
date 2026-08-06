@@ -33,7 +33,7 @@ email.addEventListener("input",()=>{
 
 // Phone Number
 phone.addEventListener("input",()=>{
-    if(phone.value.length != 10){
+    if(phone.value.length != 12){
         phone.style.border="4px solid red";
     }
     else{
