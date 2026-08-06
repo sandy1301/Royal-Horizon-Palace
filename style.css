@@ -409,7 +409,9 @@ strong{
     }
     #Rooms p{
         font-size:16px;
-        line-height: 20px;
+        text-align: center;
+        justify-content: center;
+        line-height: normal;
     }
     .room-pic{
         width: 250px;
