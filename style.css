@@ -380,7 +380,7 @@ strong{
         padding:10px;
     }
     #About p{
-        font-size:12px;
+        font-size:16px;
         margin-top: 5px;
         line-height: 20px;
     }
@@ -408,7 +408,7 @@ strong{
         padding:5px;
     }
     #Rooms p{
-        font-size:12px;
+        font-size:16px;
         line-height: 20px;
     }
     .room-pic{
@@ -419,9 +419,10 @@ strong{
     }
     .room-pic:hover{
         opacity: 90%;
+        
     }
     span{
-        font-size: 12px;
+        font-size: 16px;
     }
     #Gallery{
         height:auto;
