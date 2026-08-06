@@ -27,7 +27,7 @@ email.addEventListener("input",()=>{
 });
 
 phone.addEventListener("input",()=>{
-    if(phone.value.length != 12){
+    if(phone.value.length != 10){
         phone.style.border="4px solid red";
     }
     else{
