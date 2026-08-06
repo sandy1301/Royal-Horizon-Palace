@@ -218,6 +218,8 @@ nav ul li a:hover{
     line-height:2;
     border:2px solid gold;
     border-radius: 10px;
+    padding: 20px;
+    margin:10px;
 }
 span{
     color:gold;

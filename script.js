@@ -8,8 +8,6 @@ let room = document.getElementById("room");
 let bed = document.getElementById("bed");
 let terms = document.getElementById("terms");
 
-
-// Full Name
 fullname.addEventListener("input",()=>{
     if(fullname.value.length < 8){
         fullname.style.border="4px solid red";
@@ -19,8 +17,6 @@ fullname.addEventListener("input",()=>{
     }
 });
 
-
-// Email
 email.addEventListener("input",()=>{
     if(!email.value.includes("@")){
         email.style.border="4px solid red";
@@ -30,8 +26,6 @@ email.addEventListener("input",()=>{
     }
 });
 
-
-// Phone Number
 phone.addEventListener("input",()=>{
     if(phone.value.length != 12){
         phone.style.border="4px solid red";
@@ -41,8 +35,6 @@ phone.addEventListener("input",()=>{
     }
 });
 
-
-// Check-in Date
 checkin.addEventListener("input",()=>{
     if(checkin.value==""){
         checkin.style.border="4px solid red";
@@ -52,8 +44,6 @@ checkin.addEventListener("input",()=>{
     }
 });
 
-
-// Check-out Date
 checkout.addEventListener("input",()=>{
 
     if(checkout.value=="" || checkout.value <= checkin.value){
@@ -65,8 +55,6 @@ checkout.addEventListener("input",()=>{
 
 });
 
-
-// Guests
 guests.addEventListener("change",()=>{
 
     if(guests.value==""){
@@ -78,8 +66,6 @@ guests.addEventListener("change",()=>{
 
 });
 
-
-// Room Type
 room.addEventListener("change",()=>{
 
     if(room.value==""){
@@ -91,8 +77,6 @@ room.addEventListener("change",()=>{
 
 });
 
-
-// Bed Preference
 bed.addEventListener("change",()=>{
 
     if(bed.value==""){
@@ -104,8 +88,6 @@ bed.addEventListener("change",()=>{
 
 });
 
-
-// Terms checkbox
 terms.addEventListener("change",()=>{
 
     if(terms.checked){
@@ -117,8 +99,6 @@ terms.addEventListener("change",()=>{
 
 });
 
-
-// Form Submit Validation
 document.querySelector(".booking-form").addEventListener("submit",(e)=>{
 
     if(!terms.checked){
